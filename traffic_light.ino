@@ -32,10 +32,8 @@ void setup()
 void loop()
 {
 
-  //Serial.print("Red, green veya yellow yazın");
   if (Serial.available() > 0) {
     String mData = Serial.readString();
-    //Serial.print("Yazdığınız:" + mData);
 
     if (mData == r) {
       mRuleGreen();
